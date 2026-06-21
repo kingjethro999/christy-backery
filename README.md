@@ -1,4 +1,4 @@
-# Christy Bakery
+# Christy Bakery - BY JAPHETH NOMSI Semester 4
 
 Welcome to the Christy Bakery web application! This platform provides an online storefront and administrative dashboard for managing bakery products, customer orders, and reservations.
 
