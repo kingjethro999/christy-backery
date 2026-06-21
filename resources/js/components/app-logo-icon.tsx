@@ -1,0 +1,19 @@
+import { SVGAttributes } from 'react';
+
+export default function AppLogoIcon(props: SVGAttributes<SVGElement>) {
+    return (
+        <svg {...props} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <rect width="32" height="32" rx="8" className="fill-[#f53003]" />
+            <path
+                d="M8 20c0-4 2.5-7 6-8.5C14 9 15 7.5 16 7.5s2 1.5 2 4C21.5 13 24 16 24 20c0 3.5-2.5 5.5-8 5.5S8 23.5 8 20z"
+                className="fill-white dark:fill-[#fff8f5]"
+            />
+            <path
+                d="M11 14.5c.8-.8 1.8-1.2 2.8-1.2M16 13.2V11M20.2 14.5c-.8-.8-1.8-1.2-2.8-1.2"
+                className="stroke-[#f53003]"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+            />
+        </svg>
+    );
+}
