@@ -1,7 +1,7 @@
 import { Head, Link } from '@inertiajs/react';
 import AppLayout from '@/layouts/app-layout';
 import {
-    DollarSign, ShoppingBag, Package, MessageSquare,
+    Banknote, ShoppingBag, Package, MessageSquare,
     TrendingUp, Clock, CheckCircle2, XCircle
 } from 'lucide-react';
 import { type BreadcrumbItem } from '@/types';
@@ -62,8 +62,8 @@ export default function AdminDashboard({ stats, recentOrders, recentInquiries }:
     const statCards = [
         {
             title: 'Total Sales',
-            value: `$${stats.totalSales.toFixed(2)}`,
-            icon: DollarSign,
+            value: `₦${stats.totalSales.toFixed(2)}`,
+            icon: Banknote,
             color: 'text-green-600 dark:text-green-400',
             bg: 'bg-green-50 dark:bg-green-900/20',
         },
@@ -149,7 +149,7 @@ export default function AdminDashboard({ stats, recentOrders, recentInquiries }:
                                             {order.status}
                                         </span>
                                         <span className="text-sm font-semibold text-neutral-900 dark:text-white">
-                                            ${Number(order.total_price).toFixed(2)}
+                                            ₦{Number(order.total_price).toFixed(2)}
                                         </span>
                                     </div>
                                 </div>

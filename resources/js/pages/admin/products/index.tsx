@@ -127,7 +127,7 @@ export default function AdminProductsIndex({ products, filters }: AdminProductsI
                                             </div>
                                         </td>
                                         <td className="px-6 py-4 text-neutral-600 dark:text-neutral-400">{product.category?.name || '—'}</td>
-                                        <td className="px-6 py-4 font-medium text-neutral-900 dark:text-white">${Number(product.price).toFixed(2)}</td>
+                                        <td className="px-6 py-4 font-medium text-neutral-900 dark:text-white">₦{Number(product.price).toFixed(2)}</td>
                                         <td className="px-6 py-4">
                                             <span className={`font-medium ${product.stock <= 5 ? 'text-red-600 dark:text-red-400' : 'text-neutral-900 dark:text-white'}`}>
                                                 {product.stock}

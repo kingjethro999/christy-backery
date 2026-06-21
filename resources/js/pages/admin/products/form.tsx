@@ -121,7 +121,7 @@ export default function AdminProductForm({ product, categories }: ProductFormPro
 
                     <div className="grid grid-cols-2 gap-6">
                         <div>
-                            <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">Price ($) *</label>
+                            <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">Price (₦) *</label>
                             <input
                                 type="number"
                                 step="0.01"
